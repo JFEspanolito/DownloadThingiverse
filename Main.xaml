@@ -1,0 +1,319 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1046,1447" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Use Browser Firefox: Thingiverse" sap:VirtualizedContainerService.HintSize="518,1424" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="Simulate" ScopeGuid="47e985fa-3acb-4b9b-bbf6-ea4a3c136ae2" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,1184" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="dtNames" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click on Files" sap:VirtualizedContainerService.HintSize="450,139" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="24474d0d-5b27-47d8-9fc4-fab38f540cc0" InformativeScreenshot="48868beec450b0f8090ef48eb51f3bb8" Selector="&lt;webctrl aaname='Files' parentid='thing-detail-content' tag='SPAN' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <Sequence DisplayName="Get Data" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Name'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='h5' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="47e985fa-3acb-4b9b-bbf6-ea4a3c136ae2" Version="V4">
+                <uix:NExtractData.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.thingiverse.com/thing:6766315/files" DesignTimeRectangle="417, 413, 1024, 58988" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='thing-detail-content' tag='DIV' /&gt;" Guid="fac7f2c4-fdee-4a05-9698-74db1812e1c2" InformativeScreenshot="12d72c539ee33fbcc9aabb966433cad6.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='[UPDATE 2] Pokemon ULTRA Pack (403 so far) - Optimized for 3D printing! by 3print1UP - Thingiverse' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NExtractData.Target>
+              </uix:NExtractData>
+              <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="sd:DataTable">[dtNames]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="sd:DataTable">[ExtractDataTable.Clone]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:MergeDataTable Destination="[dtNames]" DisplayName="Merge Data Table" sap:VirtualizedContainerService.HintSize="434,165" sap2010:WorkflowViewState.IdRef="MergeDataTable_1" MissingSchemaAction="Add" Source="[ExtractDataTable]" />
+              <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Name'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='h5' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="47e985fa-3acb-4b9b-bbf6-ea4a3c136ae2" Version="V4">
+                <uix:NExtractData.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.thingiverse.com/thing:6766315/files" DesignTimeRectangle="417, -6217, 1024, 58988" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='thing-detail-content' tag='DIV' /&gt;" Guid="a6c82f0d-cab2-4b40-8ff5-717e9a86eb16" InformativeScreenshot="8650494e1fc1055be995efde643cb74c.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='[UPDATE 2] Pokemon ULTRA Pack (403 so far) - Optimized for 3D printing! by 3print1UP - Thingiverse' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NExtractData.Target>
+              </uix:NExtractData>
+              <ui:MergeDataTable Destination="[dtNames]" DisplayName="Merge Data Table" sap:VirtualizedContainerService.HintSize="434,158" sap2010:WorkflowViewState.IdRef="MergeDataTable_2" MissingSchemaAction="Add" Source="[ExtractDataTable]" />
+            </Sequence>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtNames]" DisplayName="Download Files" sap:VirtualizedContainerService.HintSize="450,928" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,712" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:Boolean" Name="replaceIt" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Download" sap:VirtualizedContainerService.HintSize="382,139" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1c89591d-3e24-44fe-a76a-2525487cd5c5" InformativeScreenshot="6c15e79974a6bf871fb99c04e5d0e835" Selector="[&quot;&lt;webctrl aria-label='Download*&quot;+CurrentRow(&quot;Name&quot;).ToString+&quot;' tag='BUTTON' type='button' /&gt;&quot;]">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Type Into Path" EmptyField="True" sap:VirtualizedContainerService.HintSize="382,187" sap2010:WorkflowViewState.IdRef="TypeInto_1" SimulateType="True" Text="[&quot;E:\Archivos\Downloads\Instaladores\3D Printer\STLS\Collections\Pokémon\&quot;+CurrentRow(&quot;Name&quot;).ToString]">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9bdb98b1-7d01-497c-bb97-b93c729540d5" InformativeScreenshot="e536a90a51421c7c62fa3ffc34eb3d9f" Selector="&lt;wnd app='firefox.exe' cls='#32770' title='Enter name of file to save to…' /&gt;&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Save" sap:VirtualizedContainerService.HintSize="382,139" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="17318865-c1bf-44ec-816a-35bf17c6fe79" InformativeScreenshot="350c46642734b6cfd4918f21a856de79" Selector="&lt;wnd app='firefox.exe' cls='#32770' title='Enter name of file to save to…' /&gt;&lt;wnd ctrlid='1' title='&amp;amp;Save' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:UiElementExists DisplayName="Element Exists Replace?" Exists="[replaceIt]" sap:VirtualizedContainerService.HintSize="382,139" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                      <ui:UiElementExists.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="af58cbcb-8fad-439b-9ff7-4d4aec802eee" InformativeScreenshot="060e7d50246d904f8669faff54089a10" Selector="&lt;wnd app='firefox.exe' cls='#32770' title='Confirm Save As' /&gt;&lt;wnd aaname='Confirm Save As' cls='DirectUIHWND' /&gt;&lt;ctrl name='Confirm Save As' role='pane' /&gt;&lt;ctrl name='*already exists.  Do you want to replace it?' role='text' /&gt;" TimeoutMS="2000">
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:UiElementExists.Target>
+                    </ui:UiElementExists>
+                    <If Condition="[replaceIt]" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="If_1">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clñick Yes" sap:VirtualizedContainerService.HintSize="382,130" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+                            <ui:Click.CursorPosition>
+                              <ui:CursorPosition Position="Center">
+                                <ui:CursorPosition.OffsetX>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:CursorPosition.OffsetX>
+                                <ui:CursorPosition.OffsetY>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:CursorPosition.OffsetY>
+                              </ui:CursorPosition>
+                            </ui:Click.CursorPosition>
+                            <ui:Click.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8847f9f6-c0e2-4c96-b1e8-c63907caa3d4" InformativeScreenshot="c4e2c81f0fc7dbb7724fb10665deee3e" Selector="&lt;wnd app='firefox.exe' cls='#32770' title='Confirm Save As' /&gt;&lt;wnd aaname='Confirm Save As' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Yes' cls='Button' title='&amp;amp;Yes' /&gt;" TimeoutMS="2000">
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:Click.Target>
+                          </ui:Click>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Firefox" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOWSURBVGhD3Zq9bhQxFIX3URaJhp4mDV1KSt4gPABVKl4gSJGi0CBEARIFDRUSBRISKRCiSEeRCBpEEQQNRRSJ7KzxNzsn8Vr22POz0pgrHe2ufe17z/Wxd3ZmZzG7+ehybrFr8cri2OLM4qJBZWFGBnNqfmIRk9g7FvMmrbThbHFgcWqxiUS7ghzIhWK2E7EOWxYwD000BRxZbDXprhsdFjANDZwSyHGdhG1ANlOuvA9W4lpO9gOaDzlOGbtKHumw60NOUwZSmkOA3T3KaXNjb4Vb+5fm9uN10KZ+EBrfERy3OxDgrA05ZEHJ3HmyMPdfL8zTz5V5/21pvvxcmq+/V+A9bfQ9eFPVvu7YATiAwKCTZ/vZwhx+rOpEc+3HH2NeHFfm7vMVkQE4gkBn/VM5ZLH3oaqTkf06N3WlIfTwXVWvCKDqtNHn+9POXD1X4xQCaCnUGQSBqDrJyKg+ZGj3te6CPnwgh6xkn74v69XAJxSzBWedCBCAQAp+/tfUukbTSjI0zoX8qDrVZxUwinDvZWcSF9kEmJjqKXmkgDTU5/unoDFITPuH1w4rUV/8ZROgYm9PrpMncJ/EfTAHlRcJ5ESskG8A+QTQOIZsqLyS53UINAcFkZyQlhu7BWkCTI50dHqgebefPirYB/4xqiJBJFNKeQSoCMYya8PSx6mCrFiVPkAuzKFYSEd7jO8JtbcgTcCdlAq5VSG4e5x2NZ8Ac3PEYqy4W6wI2gkwGG1SrdCyboIASUuu7l6LIE1A8vGDAT7TDwkfkJZJLr4P+8mfE+i0y5BRWkKajGCxapCEC2SnYxGTHEK+/lzE0GYOFc1DOwEGMwmGNhPLeQV332CZeq6BD9LBKELiO6GdgJtIhh6vMJQA+y5z3H9OoHgJgZxN7GMogdE2MZO1HaMxDCEARjtGCdj2RRZDXwL044c/NviLDLjJ+JcSMQwhMOqlBGCC2MVcDH0JuONGu5gjaNvldAh9CWzkclrQ5OyHlDa7EqB9Yz9oBJLS6UBCBIwl1IUAbfy40bUTpx3jfb8I8gkQKPdHPcctBOkHvPePYI2hT8nzmnvSNcgnAJiYACKBnNgTqq4bWJ9j7VQZqUg2JM9KuL4JdLsrIRCAleB6XkZw9gjtVFpJ+qAPn7FvbBV/a7H4m7vF314v/gFH2Y+Ymudk5T7kw+yHsh+zYrah3AfdMjosyvyrgcw6lPtnD9dwbgZN+O82s9k/Mfm9LmXYmT8AAAAASUVORK5CYII=" sap2010:WorkflowViewState.IdRef="TargetApp_1" InformativeScreenshot="68a36cbd6adc8a2d51ef8c346f4bd7d1.png" Selector="&lt;html app='firefox.exe' title='*Thingiverse*' /&gt;" Title="[UPDATE 2] Pokemon ULTRA Pack (403 so far) - Optimized for 3D printing! by 3print1UP - Thingiverse" Url="https://www.thingiverse.com/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
